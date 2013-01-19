@@ -1,10 +1,17 @@
-set nocompatible
+" too many write events
+set nobackup
+set nowritebackup
+set noswapfile
 
+set colorcolumn=80
+set mouse=a
 set number
 set ruler
 set showcmd
+set hidden
 
 set incsearch
+set ignorecase
 set smartcase
 set hlsearch
 
@@ -27,3 +34,5 @@ if has("gui_running")
 else
     set background=dark
 end
+
+map <leader>n :NERDTreeToggle<Enter>
