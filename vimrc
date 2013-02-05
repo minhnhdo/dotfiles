@@ -1,3 +1,22 @@
+" for vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+
+" required for vundle
+filetype plugin indent on
+
 " too many write events
 set nobackup
 set nowritebackup
@@ -24,7 +43,6 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
-filetype plugin indent on
 syntax on
 
 colorscheme solarized
@@ -34,5 +52,6 @@ if has("gui_running")
 else
     set background=dark
 end
+
 
 map <leader>n :NERDTreeToggle<Enter>
