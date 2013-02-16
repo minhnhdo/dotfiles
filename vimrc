@@ -43,7 +43,7 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
-syntax on
+syntax enable
 
 colorscheme solarized
 if has("gui_running")
