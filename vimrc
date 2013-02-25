@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/powerline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 
@@ -22,6 +23,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+set laststatus=2
 set colorcolumn=80
 set mouse=a
 set number
@@ -53,5 +55,12 @@ else
     set background=dark
 end
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
-map <leader>n :NERDTreeToggle<Enter>
+nmap j gj
+nmap k gk
+nmap <leader>e :NERDTreeToggle<Enter>
+nmap <leader>q :nohlsearch<Enter>
+nmap <C-e> :e#<Enter>
+nmap <C-n> :bnext<Enter>
+nmap <C-p> :bprev<Enter>
