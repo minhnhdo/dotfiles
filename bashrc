@@ -19,4 +19,3 @@ alias lh='l -lh'
 export GOPATH=$HOME/golang
 export EDITOR=vim
 
-xrdb -merge $HOME/.Xresources
