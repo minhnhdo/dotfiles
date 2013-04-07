@@ -14,6 +14,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/powerline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 
 " required for vundle
 filetype plugin indent on
