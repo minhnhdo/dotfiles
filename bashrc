@@ -19,3 +19,6 @@ alias lh='l -lh'
 export GOPATH=$HOME/golang
 export EDITOR=vim
 
+# python virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
