@@ -23,6 +23,10 @@ export EDITOR=vim
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
+# GNOME keyring manager
+SSH_AUTH_SOCK=`ss -xl | grep -o /run/user/1000/keyring-*/ssh`
+[ -z SSH_AUTH_SOCK ] || export SSH_AUTH_SOCK
+
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(git:\1)/'
 }
