@@ -22,3 +22,8 @@ export EDITOR=vim
 # python virtualenv
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(git:\1)/'
+}
+export PS1="[\[\033[00m\]\u@\h\[\033[01;34m\] \W \[\033[31m\]\$(parse_git_branch)\[\033[00m\]]$\[\033[00m\] "
