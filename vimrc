@@ -15,6 +15,7 @@ Bundle 'Lokaltog/powerline'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/slimv.vim'
 
 " required for vundle
 filetype plugin indent on
@@ -55,6 +56,8 @@ if has("gui_running")
 else
     set background=dark
 end
+
+let g:slimv_swank_cmd = '! xfce4-terminal --command="sbcl --load /home/minh/quicklisp/dists/quicklisp/software/slime-20130312-cvs/start-swank.lisp" &'
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
