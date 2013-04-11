@@ -1,6 +1,3 @@
-# go to parent dir fast
-alias '..'='cd ..'
-
 # colors
 alias ls='ls --color=auto'
 alias less='less -r'
