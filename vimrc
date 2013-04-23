@@ -57,7 +57,12 @@ else
     set background=dark
 end
 
+" help slimv find swank
 let g:slimv_swank_cmd = '! xfce4-terminal --command="sbcl --load /home/minh/quicklisp/dists/quicklisp/software/slime-20130312-cvs/start-swank.lisp" &'
+" matching color parens
+let g:slimv_rainbow = 1
+" do not put the closing paren on a new line
+" let g:paredit_electric_return = 0
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
