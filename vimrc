@@ -1,3 +1,6 @@
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org call org#SetOrgFileType()
+
 " for vundle
 set nocompatible
 filetype off
@@ -9,13 +12,15 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 " original repos on github
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/powerline'
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/slimv.vim'
+Bundle 'hsitz/VimOrganizer'
 
 " required for vundle
 filetype plugin indent on
@@ -52,7 +57,7 @@ syntax enable
 colorscheme solarized
 if has("gui_running")
     set background=light
-    set guifont=Monospace\ 12
+    set guifont=Monospace\ 11
 else
     set background=dark
 end
@@ -66,8 +71,8 @@ let g:slimv_rainbow = 1
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
-nmap j gj
-nmap k gk
+"nmap j gj
+"nmap k gk
 nmap <leader>e :NERDTreeToggle<Enter>
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
