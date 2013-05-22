@@ -19,7 +19,7 @@ Bundle 'Lokaltog/powerline'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
-Bundle 'vim-scripts/slimv.vim'
+" Bundle 'vim-scripts/slimv.vim'
 Bundle 'hsitz/VimOrganizer'
 
 " required for vundle
@@ -63,9 +63,9 @@ else
 end
 
 " help slimv find swank
-let g:slimv_swank_cmd = '! xfce4-terminal --command="sbcl --load /home/minh/quicklisp/dists/quicklisp/software/slime-20130312-cvs/start-swank.lisp" &'
+" let g:slimv_swank_cmd = '! xfce4-terminal --command="sbcl --load /home/minh/quicklisp/dists/quicklisp/software/slime-20130312-cvs/start-swank.lisp" &'
 " matching color parens
-let g:slimv_rainbow = 1
+" let g:slimv_rainbow = 1
 " do not put the closing paren on a new line
 " let g:paredit_electric_return = 0
 
