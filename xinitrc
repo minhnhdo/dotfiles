@@ -19,14 +19,16 @@ stalonetray &
 # notification
 dunst &
 
+# colors and settings for rxvt-unicode
 xrdb -merge $HOME/.Xresources
 
+# daemons
 urxvtd -q -f -o
+ibus-unikey -xdr
 
 parcellite &
 synapse -s &
 nm-applet &
-ibus-unikey -xdr
 
 xsetroot -cursor_name left_ptr
 exec xmonad
