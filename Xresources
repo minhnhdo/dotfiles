@@ -4,7 +4,7 @@ URxvt*saveLines: 5000
 URxvt*cursorBlink: true
 URxvt*termName: rxvt-unicode
 
-URxvt*perl-ext-common: default,font-size,tabbed,matcher
+URxvt*perl-ext-common: default,font-size,tabbed,matcher,clipboard
 
 URxvt*keysym.Control-equal: perl:font-size:increase
 URxvt*keysym.Control-minus: perl:font-size:decrease
