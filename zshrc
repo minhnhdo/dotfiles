@@ -42,6 +42,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# For gnome-keyring
+SSH_AUTH_SOCK=`ss -xl | grep -o '/run/user/1000/keyring-.*/ssh'`
+[ -z "$SSH_AUTH_SOCK" ] || export SSH_AUTH_SOCK
+
 # For ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
