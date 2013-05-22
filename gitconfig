@@ -14,3 +14,5 @@
 	untracked = magenta bold
 [color "branch"]
 	remote = yellow
+[push]
+	default = simple
