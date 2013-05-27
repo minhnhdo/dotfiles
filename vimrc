@@ -13,14 +13,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-fugitive'
+Bundle 'hsitz/VimOrganizer'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/powerline'
-" Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+" Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/haskell.vim'
 " Bundle 'vim-scripts/slimv.vim'
-Bundle 'hsitz/VimOrganizer'
 
 " required for vundle
 filetype plugin indent on
