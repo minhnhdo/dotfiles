@@ -24,11 +24,12 @@ xrdb -merge $HOME/.Xresources
 
 # daemons
 urxvtd -q -f -o
-ibus-unikey -xdr
+ibus-daemon -xdr
 
 parcellite &
 synapse -s &
 nm-applet &
+xscreensaver -no-splash &
 
 xsetroot -cursor_name left_ptr
-exec xmonad
+exec $HOME/.cabal/bin/xmonad
