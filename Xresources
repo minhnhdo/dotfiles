@@ -3,6 +3,8 @@ URxvt*scrollstyle: plain
 URxvt*saveLines: 5000
 URxvt*cursorBlink: true
 URxvt*termName: rxvt-unicode
+URxvt*inputMethod: ibus
+URxvt*preeditStyle: OverTheSpot
 
 URxvt*perl-ext-common: default,font-size,tabbed,matcher,clipboard
 
