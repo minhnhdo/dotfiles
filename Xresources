@@ -1,4 +1,4 @@
-URxvt*font: xft:Inconsolata:size=11:antialias=true
+URxvt*font: xft:Monaco:pixelsize=14:antialias=true
 URxvt*scrollstyle: plain
 URxvt*saveLines: 5000
 URxvt*cursorBlink: true
