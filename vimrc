@@ -1,6 +1,8 @@
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org call org#SetOrgFileType()
 
+au BufEnter *.hs compiler ghc
+
 " for vundle
 set nocompatible
 filetype off
@@ -14,15 +16,19 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'hsitz/VimOrganizer'
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'lukerandall/haskellmode-vim'
 Bundle 'Lokaltog/powerline'
-Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 " Bundle 'Valloric/YouCompleteMe'
-Bundle 'vim-scripts/haskell.vim'
 " Bundle 'vim-scripts/slimv.vim'
+
+" for haskellmode
+let g:haddock_browser="/usr/bin/firefox"
 
 " required for vundle
 filetype plugin indent on
@@ -59,7 +65,7 @@ syntax enable
 colorscheme solarized
 if has("gui_running")
     set background=light
-    set guifont=Monospace\ 11
+    set guifont=Monaco\ 11
 else
     set background=dark
 end

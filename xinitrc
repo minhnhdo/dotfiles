@@ -29,6 +29,7 @@ ibus-daemon -xdr
 parcellite &
 synapse -s &
 nm-applet &
+blueman-applet &
 xscreensaver -no-splash &
 
 xsetroot -cursor_name left_ptr
