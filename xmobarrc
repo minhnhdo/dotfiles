@@ -1,4 +1,4 @@
-Config { font = "xft:Monaco:size=10:antialias=true"
+Config { font = "xft:Monaco:size=9:antialias=true"
        , bgColor = "black"
        , fgColor = "grey"
        , position = Top
