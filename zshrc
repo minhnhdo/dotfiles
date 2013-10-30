@@ -53,9 +53,11 @@ export QT_IM_MODULE=ibus
 
 # For virtualenv
 export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+export PROJECT_HOME=$HOME/Documents/Workplace
+source /usr/share/doc/virtualenvwrapper/examples/virtualenvwrapper_lazy.sh
 
-export PATH=$HOME/.cabal/bin:$PATH
+export PATH=$HOME/opt/bin:$HOME/.cabal/bin:$PATH
+export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
 
 export EDITOR=vim
 
@@ -66,3 +68,21 @@ alias l='ls -CF'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+uprust() {
+    DIR=$PROJECT_HOME/rust/rust
+    CUR_DIR=$(pwd)
+    cd $DIR
+    CUR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    git stash
+    git checkout master
+    git pull upstream master
+    if grep 'llvm\|libuv' <<<$(git status --porcelain); then
+        git submodule update
+    fi
+    git push
+    git checkout $CUR_BRANCH
+    git stash pop
+    cd $CUR_DIR
+    unset DIR CUR_BRANCH CUR_DIR
+}

@@ -1,8 +1,3 @@
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
-au BufEnter *.org call org#SetOrgFileType()
-
-au BufEnter *.hs compiler ghc
-
 " for vundle
 set nocompatible
 filetype off
@@ -11,24 +6,57 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 " original repos on github
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'hsitz/VimOrganizer'
-Bundle 'lukerandall/haskellmode-vim'
+" Bundle 'altercation/vim-colors-solarized'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/tabman.vim'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
+Bundle 'Shougo/vimproc'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/paredit.vim'
 " Bundle 'Valloric/YouCompleteMe'
-" Bundle 'vim-scripts/slimv.vim'
+
+" for rainbow_parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" highlight trailing whitespace
+match ErrorMsg '\s\+$'
 
 " for haskellmode
 let g:haddock_browser="/usr/bin/firefox"
+
+" colorscheme solarized
+" if has("gui_running")
+"     set background=light
+"     set guifont=Monaco\ 11
+" else
+"     set background=dark
+" end
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+let mapleader = ","
+"nmap j gj
+"nmap k gk
+nmap <leader>e :NERDTreeToggle<Enter>
+nmap <leader>q :nohlsearch<Enter>
+nmap <C-e> :e#<Enter>
+nmap <C-n> :bnext<Enter>
+nmap <C-p> :bprev<Enter>
 
 " required for vundle
 filetype plugin indent on
@@ -61,28 +89,3 @@ set tabstop=4
 set softtabstop=4
 
 syntax enable
-
-colorscheme solarized
-if has("gui_running")
-    set background=light
-    set guifont=Monaco\ 11
-else
-    set background=dark
-end
-
-" help slimv find swank
-" let g:slimv_swank_cmd = '! xfce4-terminal --command="sbcl --load /home/minh/quicklisp/dists/quicklisp/software/slime-20130312-cvs/start-swank.lisp" &'
-" matching color parens
-" let g:slimv_rainbow = 1
-" do not put the closing paren on a new line
-" let g:paredit_electric_return = 0
-
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-
-"nmap j gj
-"nmap k gk
-nmap <leader>e :NERDTreeToggle<Enter>
-nmap <leader>q :nohlsearch<Enter>
-nmap <C-e> :e#<Enter>
-nmap <C-n> :bnext<Enter>
-nmap <C-p> :bprev<Enter>
