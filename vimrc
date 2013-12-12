@@ -26,12 +26,32 @@ Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/paredit.vim'
 " Bundle 'Valloric/YouCompleteMe'
+Bundle 'wting/rust.vim'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+" .+12, on the left, black is changed to white
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['darkmagenta', 'SeaGreen3'],
+    \ ['white',       'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
 
 " highlight trailing whitespace
 match ErrorMsg '\s\+$'
@@ -60,11 +80,6 @@ nmap <C-p> :bprev<Enter>
 
 " required for vundle
 filetype plugin indent on
-
-" too many write events
-set nobackup
-set nowritebackup
-set noswapfile
 
 set laststatus=2
 set colorcolumn=80

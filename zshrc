@@ -54,10 +54,12 @@ export QT_IM_MODULE=ibus
 # For virtualenv
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/Workplace
-source /usr/share/doc/virtualenvwrapper/examples/virtualenvwrapper_lazy.sh
+source /etc/bash_completion.d/virtualenvwrapper
 
-export PATH=$HOME/opt/bin:$HOME/.cabal/bin:$PATH
+export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH
 export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
+
+export STUDY_HOME=$HOME/Documents/Study
 
 export EDITOR=vim
 
@@ -76,7 +78,8 @@ uprust() {
     CUR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
     git stash
     git checkout master
-    git pull upstream master
+    git fetch upstream
+    git rebase upstream/master
     if grep 'llvm\|libuv' <<<$(git status --porcelain); then
         git submodule update
     fi
