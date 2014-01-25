@@ -54,9 +54,6 @@ let g:rbpt_colorpairs = [
     \ ['red',         'firebrick3'],
     \ ]
 
-" highlight trailing whitespace
-match ErrorMsg '\s\+$'
-
 " for haskellmode
 let g:haddock_browser="/usr/bin/firefox"
 
@@ -82,8 +79,13 @@ nmap <C-p> :bprev<Enter>
 " required for vundle
 filetype plugin indent on
 
+set matchpairs+=<:>
+set list
+set listchars=tab:•:,trail:•,extends:#,nbsp:•
+
 set laststatus=2
-set colorcolumn=80
+set textwidth=80
+set colorcolumn=+1
 set mouse=a
 set number
 set ruler
