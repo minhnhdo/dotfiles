@@ -56,6 +56,8 @@ export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/Workplace
 source /etc/bash_completion.d/virtualenvwrapper
 
+export GOPATH=$PROJECT_HOME/golang
+
 export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH
 export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
 
@@ -72,7 +74,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 uprust() {
-    DIR=$PROJECT_HOME/rust/rust
+    DIR=$PROJECT_HOME/rust/rust-dev
     CUR_DIR=$(pwd)
     cd $DIR
     CUR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
