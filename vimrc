@@ -26,7 +26,7 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/paredit.vim'
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'wting/rust.vim'
 
 " for rainbow_parentheses
@@ -64,6 +64,11 @@ let g:haddock_browser="/usr/bin/firefox"
 "     set background=dark
 " end
 
+let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.py')
+let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
+                              \ , '!~/'
+                              \ ]
+
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader = ","
@@ -74,6 +79,7 @@ nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
+nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " required for vundle
 filetype plugin indent on
