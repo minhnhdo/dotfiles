@@ -73,8 +73,6 @@ let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader = ","
-"nmap j gj
-"nmap k gk
 nmap <leader>e :NERDTreeToggle<Enter>
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
