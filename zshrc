@@ -58,7 +58,7 @@ source /etc/bash_completion.d/virtualenvwrapper
 
 export GOPATH=$PROJECT_HOME/golang
 
-export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH
+export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH:$GOPATH/bin
 export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
 
 export STUDY_HOME=$HOME/Documents/Study
