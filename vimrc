@@ -21,6 +21,7 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/syntastic'
+Bundle 'SirVer/ultisnips'
 Bundle 'Shougo/vimproc'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-fireplace'
@@ -69,6 +70,10 @@ let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.
 let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
                               \ , '!~/'
                               \ ]
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
