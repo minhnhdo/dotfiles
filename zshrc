@@ -56,10 +56,11 @@ export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/Workplace
 source /etc/bash_completion.d/virtualenvwrapper
 
-export GOPATH=$PROJECT_HOME/golang
-
 export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin
+
 export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
+export GOPATH=$PROJECT_HOME/golang
+export PYTHONPATH=$PYTHONPATH:$HOME/opt/lib/python2.7/dist-packages
 
 export STUDY_HOME=$HOME/Documents/study
 
