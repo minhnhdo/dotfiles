@@ -2,34 +2,33 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " original repos on github
-" Bundle 'altercation/vim-colors-solarized'
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'guns/vim-clojure-static'
-Bundle 'JuliaLang/julia-vim'
-Bundle 'kien/tabman.vim'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'Lokaltog/powerline'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
-Bundle 'SirVer/ultisnips'
-Bundle 'Shougo/vimproc'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/paredit.vim'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'wting/rust.vim'
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/tabman.vim'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Lokaltog/powerline'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'SirVer/ultisnips'
+Plugin 'Shougo/vimproc'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/paredit.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'wting/rust.vim'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
