@@ -74,7 +74,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader = ","
 nmap <leader>e :NERDTreeToggle<Enter>
