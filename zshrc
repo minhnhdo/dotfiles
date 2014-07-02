@@ -79,6 +79,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias rak='bin/rake'
+alias rai='bin/rails'
+
 uprust() {
     DIR=$PROJECT_HOME/rust/rust-dev
     CUR_DIR=$(pwd)
