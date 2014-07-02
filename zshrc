@@ -42,6 +42,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export EDITOR=vim
+
 for to_source in $HOME/.nvm/nvm.sh                        \
                  $HOME/.rvm/scripts/rvm                   \
                  /etc/bash_completion.d/virtualenvwrapper; do
@@ -60,6 +62,7 @@ export QT_IM_MODULE=ibus
 # For virtualenv
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/Workplace
+export STUDY_HOME=$HOME/Documents/study
 
 export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin
 
@@ -67,9 +70,6 @@ export GUILE_LOAD_PATH=$PROJECT_HOME/guile:$GUILE_LOAD_PATH
 export GOPATH=$PROJECT_HOME/golang/gopath
 export PYTHONPATH=$HOME/opt/lib/python2.7/site-packages:$HOME/opt/lib/python2.7/dist-packages:$PYTHONPATH
 
-export STUDY_HOME=$HOME/Documents/study
-
-export EDITOR=vim
 
 alias ll='ls -alF'
 alias la='ls -A'
