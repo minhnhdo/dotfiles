@@ -42,7 +42,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-source $HOME/.nvm/nvm.sh
+for to_source in $HOME/.nvm/nvm.sh                        \
+                 $HOME/.rvm/scripts/rvm                   \
+                 /etc/bash_completion.d/virtualenvwrapper; do
+  [[ -s $to_source ]] && source $to_source
+done
 
 # For gnome-keyring
 SSH_AUTH_SOCK=`ss -xl | grep -o '/run/user/1000/keyring-.*/ssh'`
@@ -56,7 +60,6 @@ export QT_IM_MODULE=ibus
 # For virtualenv
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/Workplace
-source /etc/bash_completion.d/virtualenvwrapper
 
 export PATH=/usr/lib/ccache:$HOME/opt/bin:$HOME/.cabal/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin
 
