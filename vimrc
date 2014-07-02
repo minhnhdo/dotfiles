@@ -10,6 +10,7 @@ call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 " original repos on github
 " Plugin 'altercation/vim-colors-solarized'
+Plugin 'derekwyatt/vim-scala'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'kien/tabman.vim'
