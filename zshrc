@@ -50,10 +50,6 @@ for to_source in $HOME/.nvm/nvm.sh                        \
   [[ -s $to_source ]] && source $to_source
 done
 
-# For gnome-keyring
-SSH_AUTH_SOCK=`ss -xl | grep -o '/run/user/1000/keyring-.*/ssh'`
-[ -z "$SSH_AUTH_SOCK" ] || export SSH_AUTH_SOCK
-
 # For ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
