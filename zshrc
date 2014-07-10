@@ -44,12 +44,6 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 
-for to_source in $HOME/.nvm/nvm.sh                        \
-                 $HOME/.rvm/scripts/rvm                   \
-                 /etc/bash_completion.d/virtualenvwrapper; do
-  [[ -s $to_source ]] && source $to_source
-done
-
 # For ibus
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
@@ -95,3 +89,9 @@ uprust() {
     cd $CUR_DIR
     unset DIR CUR_BRANCH CUR_DIR
 }
+
+for to_source in $HOME/.nvm/nvm.sh                        \
+                 $HOME/.rvm/scripts/rvm                   \
+                 /etc/bash_completion.d/virtualenvwrapper; do
+  [[ -s $to_source ]] && source $to_source
+done
