@@ -62,7 +62,7 @@ export QT_IM_MODULE=ibus
 # For virtualenv
 export WORKON_HOME="~/.virtualenvs"
 export PROJECT_HOME="$HOME/Documents/Workplace"
-export STUDY_HOME="$HOME/Documents/study"
+export STUDY_HOME="$HOME/Documents/Study"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/lib/ccache:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$GOPATH/bin:$HOME/.rvm/bin"
 
