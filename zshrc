@@ -71,6 +71,8 @@ alias egrep='egrep --color=auto'
 alias rak='bundle exec rake'
 alias rai='bundle exec rails'
 
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+
 uprust() {
     DIR=$PROJECT_HOME/rust/rust-dev
     CUR_DIR=$(pwd)
