@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'guns/vim-clojure-static'
+Plugin 'honza/vim-snippets'
 Plugin 'kien/tabman.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Lokaltog/powerline'
@@ -73,6 +74,7 @@ let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim
@@ -87,6 +89,8 @@ nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " required for vundle
 filetype plugin indent on
+
+set fileencoding=utf-8
 
 set matchpairs+=<:>
 set list
