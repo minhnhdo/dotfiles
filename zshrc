@@ -94,8 +94,7 @@ uprust() {
     unset DIR CUR_BRANCH CUR_DIR
 }
 
-for to_source in $HOME/.nvm/nvm.sh                        \
-                 $HOME/.rvm/scripts/rvm                   \
-                 /etc/bash_completion.d/virtualenvwrapper; do
+for to_source in $HOME/.nvm/nvm.sh     \
+                 $HOME/.rvm/scripts/rvm; do
   [[ -s $to_source ]] && source $to_source
 done
