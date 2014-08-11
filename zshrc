@@ -55,9 +55,9 @@ export WORKON_HOME="~/.virtualenvs"
 export PROJECT_HOME="$HOME/Documents/Workplace"
 export STUDY_HOME="$HOME/Documents/Study"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/lib/ccache:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/.cabal/bin:$GOPATH/bin:$HOME/.rvm/bin"
 
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$HOME/.cabal/bin:$GOPATH/bin:$HOME/.rvm/bin"
 
 export GUILE_LOAD_PATH="$PROJECT_HOME/guile:$GUILE_LOAD_PATH"
 export GOPATH="$PROJECT_HOME/golang/gopath"
