@@ -72,7 +72,6 @@ alias egrep='egrep --color=auto'
 alias rak='bin/rake'
 alias rai='bin/rails'
 
-
 uprust() {
     DIR=$PROJECT_HOME/rust/rust-dev
     CUR_DIR=$(pwd)
@@ -92,7 +91,8 @@ uprust() {
     unset DIR CUR_BRANCH CUR_DIR
 }
 
-for to_source in $HOME/.nvm/nvm.sh     \
-                 $HOME/.rvm/scripts/rvm; do
+for to_source in $HOME/.nvm/nvm.sh      \
+                 $HOME/.rvm/scripts/rvm \
+                 $HOME/.company-config  ; do
   [[ -s $to_source ]] && source $to_source
 done
