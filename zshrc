@@ -36,7 +36,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump fabric git heroku history-substring-search zsh-completions zsh-syntax-highlighting)
+plugins=(autojump fabric git golang heroku history-substring-search scala zsh-completions zsh-syntax-highlighting)
 fpath=($HOME/.oh-my-zsh/plugins/zsh-completions/src $fpath)
 
 source $ZSH/oh-my-zsh.sh
@@ -52,14 +52,14 @@ export QT_IM_MODULE=ibus
 
 # For virtualenv
 export WORKON_HOME="~/.virtualenvs"
-export PROJECT_HOME="$HOME/Documents/Workplace"
+export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$HOME/.cabal/bin:$GOPATH/bin:$HOME/.rvm/bin:./.cabal-sandbox/bin"
-
 export GUILE_LOAD_PATH="$PROJECT_HOME/guile:$GUILE_LOAD_PATH"
-export GOPATH="$PROJECT_HOME/golang/gopath"
+export GOPATH="$PROJECT_HOME/golang"
 export PYTHONPATH="$HOME/opt/lib/python2.7/site-packages:$HOME/opt/lib/python2.7/dist-packages:$PYTHONPATH"
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$GOPATH/bin:$HOME/.rvm/bin:./.cabal-sandbox/bin:$HOME/.cabal/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
