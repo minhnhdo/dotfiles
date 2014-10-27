@@ -59,7 +59,7 @@ export GUILE_LOAD_PATH="$PROJECT_HOME/guile:$GUILE_LOAD_PATH"
 export GOPATH="$PROJECT_HOME/golang"
 export PYTHONPATH="$HOME/opt/lib/python2.7/site-packages:$HOME/opt/lib/python2.7/dist-packages:$PYTHONPATH"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$GOPATH/bin:$HOME/.rvm/bin:./.cabal-sandbox/bin:$HOME/.cabal/bin"
+export PATH="/home/minh/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$GOPATH/bin:./.cabal-sandbox/bin:$HOME/.cabal/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
@@ -92,7 +92,23 @@ uprust() {
 }
 
 for to_source in $HOME/.nvm/nvm.sh      \
-                 $HOME/.rvm/scripts/rvm \
                  $HOME/.company-config  ; do
   [[ -s $to_source ]] && source $to_source
 done
+
+rbenv rehash 2>/dev/null
+
+rbenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval `rbenv "sh-$command" "$@"`;;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}
