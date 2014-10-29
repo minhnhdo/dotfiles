@@ -57,7 +57,7 @@ export STUDY_HOME="$HOME/Documents/Study"
 
 export GOPATH="$PROJECT_HOME/golang"
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$GOPATH/bin:./.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/.rvm/bin"
+export PATH="./.cabal-sandbox/bin:$HOME/.cabal/bin:/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$GOPATH/bin:$HOME/.rvm/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
