@@ -56,7 +56,6 @@ export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
 
 export GOPATH="$PROJECT_HOME/golang"
-export PYTHONPATH="$HOME/opt/lib/python2.7/site-packages:$HOME/opt/lib/python2.7/dist-packages:$PYTHONPATH"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/opt/ccache/libexec:$GOPATH/bin:./.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/.rvm/bin"
 
