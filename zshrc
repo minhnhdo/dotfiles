@@ -55,7 +55,6 @@ export WORKON_HOME="~/.virtualenvs"
 export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
 
-export GUILE_LOAD_PATH="$PROJECT_HOME/guile:$GUILE_LOAD_PATH"
 export GOPATH="$PROJECT_HOME/golang"
 export PYTHONPATH="$HOME/opt/lib/python2.7/site-packages:$HOME/opt/lib/python2.7/dist-packages:$PYTHONPATH"
 
