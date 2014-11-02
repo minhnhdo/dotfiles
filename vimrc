@@ -5,7 +5,7 @@ set encoding=utf-8
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=$HOME/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
