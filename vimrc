@@ -81,16 +81,19 @@ let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=$HOME/.vim/bundle/neco-ghc/
 
 let mapleader = ","
-nmap <leader>t :GhcModTypeInsert<Enter>
+nmap <leader>T :GhcModTypeInsert<Enter>
+nmap <leader>t :GhcModType<Enter>
 nmap <leader>e :NERDTreeToggle<Enter>
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
+                                        \ , ', ' ]}
 
 " required for vundle
 filetype plugin indent on
