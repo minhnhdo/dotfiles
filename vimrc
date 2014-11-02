@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 " original repos on github
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/neco-ghc'
 Plugin 'fatih/vim-go'
 Plugin 'guns/vim-clojure-static'
 Plugin 'honza/vim-snippets'
@@ -84,12 +85,14 @@ let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim
 
 let mapleader = ","
+nmap <leader>t :GhcModTypeInsert<Enter>
 nmap <leader>e :NERDTreeToggle<Enter>
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 " required for vundle
 filetype plugin indent on
