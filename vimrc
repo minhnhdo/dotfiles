@@ -61,8 +61,6 @@ let g:rbpt_colorpairs = [ ['brown',       'RoyalBlue3']
                       \ , ['red',         'firebrick3']
                       \ ]
 
-" for haskellmode
-let g:haddock_browser="/usr/bin/firefox"
 
 " colorscheme solarized
 " if has("gui_running")
