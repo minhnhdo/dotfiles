@@ -54,6 +54,7 @@ export QT_IM_MODULE=ibus
 export WORKON_HOME="~/.virtualenvs"
 export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
+export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 export GOPATH="$PROJECT_HOME/golang"
 
