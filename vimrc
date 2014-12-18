@@ -106,8 +106,6 @@ set list
 set listchars=tab:>-,trail:.,extends:#,nbsp:.
 
 set laststatus=2
-set textwidth=80
-set colorcolumn=+1
 set mouse=a
 set number
 set ruler
