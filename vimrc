@@ -38,6 +38,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'wting/rust.vim'
+Plugin 'zah/nimrod.vim'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -99,6 +100,8 @@ let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
 
 " required for vundle
 filetype plugin indent on
+
+set colorcolumn=81
 
 set fileencoding=utf-8
 
