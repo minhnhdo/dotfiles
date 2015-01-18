@@ -43,9 +43,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export HISTSIZE=100000
-export SAVEHIST=100000
-
 export EDITOR=vim
 
 # For ibus
