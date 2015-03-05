@@ -37,7 +37,7 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 export GOPATH="$PROJECT_HOME/golang"
 
-export PATH="./.cabal-sandbox/bin:$HOME/.cabal/bin:/usr/local/sbin:$PROJECT_HOME/torch/install/bin:$PATH:/usr/lib/ccache:$GOPATH/bin:$HOME/.rvm/bin:$HOME/.nimble/bin"
+export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$HOME/.cabal/bin:/usr/local/sbin:$PROJECT_HOME/torch/install/bin:$PATH:/usr/lib/ccache:$GOPATH/bin:$HOME/.rvm/bin:$HOME/.nimble/bin"
 export LD_LIBRARY_PATH="$PROJECT_HOME/torch/install/lib:$LD_LIBRARY_PATH:/usr/local/opt/lib"
 
 alias ll='ls -alF'
