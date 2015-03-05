@@ -13,7 +13,6 @@ antigen bundles <<BUNDLES
   heroku
   history-substring-search
   lein
-  scala
 
   zsh-users/zsh-completions
   zsh-users/zsh-syntax-highlighting
