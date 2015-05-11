@@ -36,8 +36,9 @@ export STUDY_HOME="$HOME/Documents/Study"
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 
 export GOPATH="$PROJECT_HOME/golang"
+export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$HOME/.cabal/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin"
+export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$HOME/.cabal/bin:$PYENV_ROOT/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
@@ -55,3 +56,6 @@ for to_source in $HOME/.nvm/nvm.sh      \
                  $HOME/.company-config  ; do
   [[ -s $to_source ]] && source $to_source
 done
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
