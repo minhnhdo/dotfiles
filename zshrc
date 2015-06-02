@@ -58,4 +58,4 @@ for to_source in $HOME/.nvm/nvm.sh      \
 done
 
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+pyenv virtualenvwrapper_lazy
