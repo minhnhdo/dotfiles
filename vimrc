@@ -88,6 +88,8 @@ set rtp+=$HOME/.vim/bundle/neco-ghc/
 let mapleader = ","
 nmap <leader>T :GhcModTypeInsert<Enter>
 nmap <leader>t :GhcModType<Enter>
+nmap <leader>s :GhcModSplitFunCase<Enter>
+nmap <leader>S :GhcModSigCodegen<Enter>
 nmap <leader>e :NERDTreeToggle<Enter>
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
