@@ -57,7 +57,5 @@ for to_source in $HOME/.nvm/nvm.sh      \
   [[ -s $to_source ]] && source $to_source
 done
 
-eval "$( HALCYON_NO_SELF_UPDATE=1 "/app/halcyon/halcyon" paths )"
-
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
