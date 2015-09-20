@@ -12,7 +12,6 @@ call vundle#rc()
 " required!
 Plugin 'gmarik/Vundle.vim'
 " original repos on github
-" Plugin 'altercation/vim-colors-solarized'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'derekwyatt/vim-scala'
@@ -26,6 +25,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Lokaltog/powerline'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
@@ -64,13 +64,14 @@ let g:rbpt_colorpairs = [ ['brown',       'RoyalBlue3']
                       \ ]
 
 
-" colorscheme solarized
-" if has("gui_running")
-"     set background=light
-"     set guifont=Monaco\ 11
-" else
-"     set background=dark
-" end
+set t_Co=256
+colorscheme PaperColor
+if has("gui_running")
+    set background=light
+    set guifont=Monaco\ 11
+else
+    set background=dark
+end
 
 let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.py')
 let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
