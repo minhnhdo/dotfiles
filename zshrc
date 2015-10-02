@@ -3,7 +3,7 @@ source $HOME/.antigen/antigen.zsh
 # antigen config
 antigen use oh-my-zsh
 
-antigen theme agnoster
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen bundles <<BUNDLES
   autojump
