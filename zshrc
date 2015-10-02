@@ -38,7 +38,7 @@ export ANDROID_HOME="/usr/local/opt/android-sdk"
 export GOPATH="$PROJECT_HOME/golang"
 export PYENV_ROOT="$HOME/.pyenv"
 
-export PATH="$PWD/.cabal-sandbox/bin:$PWD/node_modules/.bin:$HOME/.cabal/bin:$PYENV_ROOT/bin:$HOME/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin"
+export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$HOME/.cabal/bin:$PYENV_ROOT/bin:$HOME/bin:$PATH:$GOPATH/bin:$HOME/.rvm/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
