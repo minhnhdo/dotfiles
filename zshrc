@@ -24,11 +24,6 @@ antigen apply
 
 export EDITOR=vim
 
-# For ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
 # For virtualenv
 export WORKON_HOME="~/.virtualenvs"
 export PROJECT_HOME="$HOME/Documents/Workspace"
