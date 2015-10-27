@@ -16,3 +16,6 @@
 	remote = yellow
 [push]
 	default = simple
+[rebase]
+	autoStash = true
+	autoSquash = true
