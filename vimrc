@@ -37,8 +37,6 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'racer-rust/vim-racer'
-Plugin 'rust-lang/rust.vim'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle

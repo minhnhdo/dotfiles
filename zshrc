@@ -30,7 +30,6 @@ export STUDY_HOME="$HOME/Documents/Study"
 export PYENV_ROOT="$HOME/.pyenv"
 export WORKON_HOME="$HOME/.virtualenvs"
 export ANDROID_HOME="/usr/local/opt/android-sdk"
-export RUST_SRC_PATH="$PROJECT_HOME/rust/rust/"
 export GOPATH="$PROJECT_HOME/golang"
 
 export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$PYENV_ROOT/bin:$PATH:$HOME/.local/bin:$GOPATH/bin:$HOME/.rvm/bin"
