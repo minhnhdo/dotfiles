@@ -6,12 +6,8 @@ antigen use oh-my-zsh
 antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen bundles <<BUNDLES
-  autojump
-  fabric
-  git
-  golang
-  heroku
   history-substring-search
+  git
   lein
 
   zsh-users/zsh-completions
