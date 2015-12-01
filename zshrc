@@ -36,7 +36,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # own config
 
-export EDITOR=vim
+export EDITOR=nvim
 
 export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
