@@ -72,6 +72,7 @@ else
     set background=dark
 end
 
+let g:syntastic_always_populate_loc_list = 1
 let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.py')
 let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
                               \ , '!~/'
