@@ -104,6 +104,7 @@ let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
 filetype plugin indent on
 
 set colorcolumn=81
+set cursorline
 
 set fileencoding=utf-8
 
