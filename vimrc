@@ -78,7 +78,7 @@ end
 
 let g:syntastic_always_populate_loc_list = 1
 let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.py')
-let g:ycm_extra_conf_globlist = [ '~/Documents/Workplace/dotfiles'
+let g:ycm_extra_conf_globlist = [ expand('$PROJECT_HOME/dotfiles')
                               \ , '!~/'
                               \ ]
 let g:ycm_autoclose_preview_window_after_insertion = 1
