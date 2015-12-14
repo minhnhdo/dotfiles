@@ -59,11 +59,11 @@ alias egrep='egrep --color=auto'
 alias rak='bin/rake'
 alias rai='bin/rails'
 
+eval "$(pyenv init -)"
+pyenv virtualenvwrapper_lazy
+
 for to_source in $HOME/.nvm/nvm.sh      \
                  $HOME/.rvm/scripts/rvm \
                  $HOME/.company-config  ; do
   [[ -s $to_source ]] && source $to_source
 done
-
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper_lazy
