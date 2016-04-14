@@ -42,6 +42,8 @@ Plugin 'vim-erlang/vim-erlang-runtime'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
 
+let g:vimwiki_list = [{'path': expand('$PROJECT_HOME/notebooks/')}]
+
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
