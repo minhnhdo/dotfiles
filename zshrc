@@ -64,6 +64,7 @@ pyenv virtualenvwrapper_lazy
 
 for to_source in $HOME/.nvm/nvm.sh      \
                  $HOME/.rvm/scripts/rvm \
+                 $HOME/.cargo/env       \
                  $HOME/.company-config  ; do
   [[ -s $to_source ]] && source $to_source
 done
