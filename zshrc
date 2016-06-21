@@ -41,6 +41,9 @@ export EDITOR=nvim
 export PROJECT_HOME="$HOME/Documents/Workspace"
 export STUDY_HOME="$HOME/Documents/Study"
 
+export RUST_SRC_PATH="$HOME/.local/src/rustc-1.9.0/src"
+export CARGO_HOME="$HOME/.cargo"
+
 export PYENV_ROOT="$HOME/.pyenv"
 export WORKON_HOME="$HOME/.virtualenvs"
 export ANDROID_HOME="/usr/local/opt/android-sdk"
