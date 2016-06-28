@@ -36,6 +36,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'vimwiki/vimwiki'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-erlang/vim-erlang-compiler'
 Plugin 'vim-erlang/vim-erlang-omnicomplete'
 Plugin 'vim-erlang/vim-erlang-runtime'
@@ -89,7 +90,6 @@ let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
-set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim
 set rtp+=$HOME/.vim/bundle/neco-ghc/
 
 let mapleader = ","
