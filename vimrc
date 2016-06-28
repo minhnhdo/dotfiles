@@ -37,6 +37,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'vimwiki/vimwiki'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-erlang/vim-erlang-compiler'
 Plugin 'vim-erlang/vim-erlang-omnicomplete'
 Plugin 'vim-erlang/vim-erlang-runtime'
@@ -79,7 +80,10 @@ else
     set background=dark
 end
 
+let g:airline_powerline_fonts = 1
+
 let g:syntastic_always_populate_loc_list = 1
+
 let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.py')
 let g:ycm_extra_conf_globlist = [ expand('$PROJECT_HOME/dotfiles')
                               \ , '!~/'
