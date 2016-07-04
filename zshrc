@@ -49,7 +49,7 @@ export WORKON_HOME="$HOME/.virtualenvs"
 export ANDROID_HOME="/usr/local/opt/android-sdk"
 export GOPATH="$PROJECT_HOME/golang"
 
-export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$PYENV_ROOT/bin:$PATH:$HOME/.local/bin:$GOPATH/bin:$HOME/.rvm/bin"
+export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$PYENV_ROOT/bin:$PATH:$HOME/.local/bin:$GOPATH/bin"
 
 alias ll='ls -alF'
 alias la='ls -A'
