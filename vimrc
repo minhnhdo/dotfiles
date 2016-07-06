@@ -81,6 +81,9 @@ else
 end
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 let g:syntastic_always_populate_loc_list = 1
 
@@ -109,6 +112,9 @@ nmap <C-p> :bprev<Enter>
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
                                         \ , ', ' ]}
+
+" don't outdent hashes
+inoremap # #
 
 " required for vundle
 filetype plugin indent on
