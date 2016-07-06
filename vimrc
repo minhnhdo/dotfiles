@@ -12,6 +12,7 @@ call vundle#rc()
 " required!
 Plugin 'VundleVim/Vundle.vim'
 " original repos on github
+Plugin 'airblade/vim-gitgutter'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'elixir-lang/vim-elixir'
