@@ -80,6 +80,8 @@ else
     set background=dark
 end
 
+let mapleader = ","
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
@@ -91,33 +93,35 @@ let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.
 let g:ycm_extra_conf_globlist = [ expand('$PROJECT_HOME/dotfiles')
                               \ , '!~/'
                               \ ]
+let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
+                                        \ , ', ' ]}
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
-set rtp+=$HOME/.vim/bundle/neco-ghc/
-
-let mapleader = ","
 nmap <leader>T :GhcModTypeInsert<Enter>
 nmap <leader>t :GhcModType<Enter>
 nmap <leader>s :GhcModSplitFunCase<Enter>
 nmap <leader>S :GhcModSigCodegen<Enter>
+
 nmap <leader>e :NERDTreeToggle<Enter>
+
 nmap <leader>q :nohlsearch<Enter>
 nmap <C-e> :e#<Enter>
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
+
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
-                                        \ , ', ' ]}
 
 " don't outdent hashes
 inoremap # #
 
 " required for vundle
 filetype plugin indent on
+
+set rtp+=$HOME/.vim/bundle/neco-ghc/
 
 set colorcolumn=81
 set cursorline
