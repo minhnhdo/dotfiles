@@ -109,7 +109,11 @@ nmap <leader>S :GhcModSigCodegen<Enter>
 nmap <leader>e :NERDTreeToggle<Enter>
 
 nmap <leader>q :nohlsearch<Enter>
-nmap <C-e> :e#<Enter>
+
+" reload current buffer
+nmap <C-e> :e%<Enter>
+
+" movements between buffers
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
 
