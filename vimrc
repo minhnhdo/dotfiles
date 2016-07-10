@@ -117,6 +117,9 @@ nmap <C-e> :e%<Enter>
 nmap <C-n> :bnext<Enter>
 nmap <C-p> :bprev<Enter>
 
+" remove traling whitespaces
+nmap <leader>s :%s/\s\+$//g<CR>
+
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " don't outdent hashes
