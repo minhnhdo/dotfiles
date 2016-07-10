@@ -103,8 +103,8 @@ let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 nmap <leader>T :GhcModTypeInsert<Enter>
 nmap <leader>t :GhcModType<Enter>
-nmap <leader>s :GhcModSplitFunCase<Enter>
-nmap <leader>S :GhcModSigCodegen<Enter>
+nmap <leader>F :GhcModSplitFunCase<Enter>
+nmap <leader>f :GhcModSigCodegen<Enter>
 
 nmap <leader>e :NERDTreeToggle<Enter>
 
