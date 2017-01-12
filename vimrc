@@ -91,8 +91,9 @@ let g:ycm_global_ycm_extra_conf = expand('$PROJECT_HOME/dotfiles/ycm_extra_conf.
 let g:ycm_extra_conf_globlist = [ expand('$PROJECT_HOME/dotfiles')
                               \ , '!~/'
                               \ ]
-let g:ycm_semantic_triggers = {'haskell': ['.', 'LANGUAGE ', '(', 'import '
-                                        \ , ', ' ]}
+let g:ycm_semantic_triggers = { 'haskell': ['.', 'LANGUAGE ', '(', 'import '
+                                         \ , ', ' ]
+                            \ }
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 let g:UltiSnipsExpandTrigger = "<c-j>"
