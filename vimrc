@@ -162,5 +162,6 @@ set tabstop=2
 set softtabstop=2
 
 autocmd FileType c,go setlocal shiftwidth=8 tabstop=8 softtabstop=8 noexpandtab
+autocmd FileType vimwiki,md,rst,text setlocal spell
 
 syntax enable
