@@ -9,4 +9,4 @@ do
 done
 
 mkdir -p $HOME/.config/nvim/
-ln -s $pwd/vimrc $HOME/.config/nvim/init.vim
+ln -s $PWD/vimrc $HOME/.config/nvim/init.vim
