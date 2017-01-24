@@ -101,21 +101,21 @@ let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
-nmap <leader>T :GhcModTypeInsert<Enter>
-nmap <leader>t :GhcModType<Enter>
-nmap <leader>F :GhcModSplitFunCase<Enter>
-nmap <leader>f :GhcModSigCodegen<Enter>
+nmap <leader>T :GhcModTypeInsert<CR>
+nmap <leader>t :GhcModType<CR>
+nmap <leader>F :GhcModSplitFunCase<CR>
+nmap <leader>f :GhcModSigCodegen<CR>
 
-nmap <leader>e :NERDTreeToggle<Enter>
+nmap <leader>e :NERDTreeToggle<CR>
 
-nmap <leader>q :nohlsearch<Enter>
+nmap <leader>q :nohlsearch<CR>
 
 " reload current buffer
-nmap <C-e> :e%<Enter>
+nmap <C-e> :e%<CR>
 
 " movements between buffers
-nmap <C-n> :bnext<Enter>
-nmap <C-p> :bprev<Enter>
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
 
 " remove traling whitespaces
 nmap <leader>s :%s/\s\+$//g<CR>
