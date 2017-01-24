@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
+Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'fatih/vim-go'
 Plugin 'guns/vim-clojure-static'
 Plugin 'honza/vim-snippets'
@@ -24,13 +25,16 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'kovisoft/paredit'
 Plugin 'lepture/vim-jinja'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'majutsushi/tagbar'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'powerman/vim-plugin-AnsiEsc'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'tbabej/taskwiki'
 Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fireplace'
@@ -43,7 +47,8 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
 
-let g:vimwiki_list = [{'path': expand('$PROJECT_HOME/notebooks/')}]
+let g:vimwiki_list = [{'path': expand('$PROJECT_HOME/notebooks/'), 'auto_tags': 1}]
+let g:taskwiki_disable_concealcursor = 'yes'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
@@ -121,6 +126,7 @@ nmap <C-p> :bprev<CR>
 nmap <leader>s :%s/\s\+$//g<CR>
 
 nnoremap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " don't outdent hashes
 inoremap # #
