@@ -3,7 +3,7 @@ source $HOME/.antigen/antigen.zsh
 # antigen config
 antigen use oh-my-zsh
 
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme bhilburn/powerlevel9k
 
 antigen bundles <<BUNDLES
   history-substring-search
