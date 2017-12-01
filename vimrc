@@ -15,7 +15,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
-Plugin 'farseer90718/vim-taskwarrior'
 Plugin 'fatih/vim-go'
 Plugin 'guns/vim-clojure-static'
 Plugin 'honza/vim-snippets'
@@ -33,7 +32,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'Shougo/vimproc.vim'
-Plugin 'tbabej/taskwiki'
 Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-fireplace'
@@ -42,12 +40,8 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vimwiki/vimwiki'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
-
-let g:vimwiki_list = [{'path': expand('$PROJECT_HOME/notebooks/'), 'auto_tags': 1}]
-let g:taskwiki_disable_concealcursor = 'yes'
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
