@@ -35,21 +35,6 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # own config
-
-export EDITOR=nvim
-
-export PROJECT_HOME="$HOME/Documents/Workspace"
-export STUDY_HOME="$HOME/Documents/Study"
-
-export CARGO_HOME="$HOME/.cargo"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export WORKON_HOME="$HOME/.virtualenvs"
-export ANDROID_HOME="$HOME/.local/opt/android-sdk"
-export GOPATH="$PROJECT_HOME/golang"
-
-export PATH="./.cabal-sandbox/bin:./node_modules/.bin:$PYENV_ROOT/bin:$PATH:$HOME/.local/bin:$GOPATH/bin"
-
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
