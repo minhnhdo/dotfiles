@@ -98,6 +98,8 @@ let g:UltiSnipsExpandTrigger = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
+let g:rustfmt_autosave = 1
+
 nmap <leader>T :GhcModTypeInsert<CR>
 nmap <leader>t :GhcModType<CR>
 nmap <leader>F :GhcModSplitFunCase<CR>
