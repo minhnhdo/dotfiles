@@ -27,7 +27,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'powerman/vim-plugin-AnsiEsc'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
@@ -104,8 +103,6 @@ nmap <leader>T :GhcModTypeInsert<CR>
 nmap <leader>t :GhcModType<CR>
 nmap <leader>F :GhcModSplitFunCase<CR>
 nmap <leader>f :GhcModSigCodegen<CR>
-
-nmap <leader>e :NERDTreeToggle<CR>
 
 nmap <leader>q :nohlsearch<CR>
 
