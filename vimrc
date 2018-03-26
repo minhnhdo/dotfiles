@@ -13,6 +13,7 @@ call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'
 " original repos on github
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'fatih/vim-go'
