@@ -140,6 +140,7 @@ set listchars=tab:•:,trail:•,extends:#,nbsp:•
 set laststatus=2
 set mouse=a
 set number
+set relativenumber
 set ruler
 set showcmd
 set hidden
