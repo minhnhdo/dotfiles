@@ -77,6 +77,9 @@ else
     set background=dark
 end
 
+let g:python_host_prog = expand('/usr/bin/python2')
+let g:python3_host_prog = expand('$HOME/.pyenv/shims/python3')
+
 let mapleader = ","
 let maplocalleader = ",,"
 
