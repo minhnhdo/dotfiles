@@ -2,5 +2,6 @@
     "terminal.integrated.experimentalBufferImpl": "TypedArray",
     "editor.fontFamily": "'Ubuntu Mono derivative Powerline', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "terminal.integrated.fontFamily": "'Ubuntu Mono derivative Powerline'",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.wordWrap": "on"
 }
