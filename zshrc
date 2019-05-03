@@ -42,6 +42,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias edit='emacsclient -nw'
+
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
 
