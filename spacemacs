@@ -324,6 +324,10 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (spacemacs/toggle-evil-cleverparens-on)
+  (with-eval-after-load 'idris-mode
+    (setq idris-stay-in-current-window-on-compiler-error t)
+    (dolist (x '("*idris-notes*" "*idris-holes*" "*idris-info*"))
+      (plist-put (cdr (assoc x popwin:special-display-config)) :noselect t)))
   (with-eval-after-load 'org
     (org-defkey org-mode-map [(meta return)] 'org-meta-return))
   (with-eval-after-load 'org-projectile
