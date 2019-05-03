@@ -34,7 +34,6 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-# own config
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -42,9 +41,6 @@ alias l='ls -CF'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-alias rak='bin/rake'
-alias rai='bin/rails'
 
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
