@@ -6,7 +6,7 @@ set nocompatible
 filetype off
 
 set rtp+=$HOME/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
@@ -40,6 +40,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rust-lang/rust.vim'
+
+call vundle#end()
 
 " for rainbow_parentheses
 au VimEnter * RainbowParenthesesToggle
