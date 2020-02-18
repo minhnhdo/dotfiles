@@ -97,8 +97,15 @@ let g:ycm_semantic_triggers = { 'haskell': ['.', 'LANGUAGE ', '(', 'import '
                             \ }
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-let g:UltiSnipsExpandTrigger = "<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-s-j>"
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 
 let g:rustfmt_autosave = 1
