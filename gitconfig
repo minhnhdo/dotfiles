@@ -1,5 +1,5 @@
 [user]
-	email = minhnhdo@gmail.com
+	email = reg@minhdo.org
 	name = Do Nhat Minh
 	signingkey = 7FC7BA38FDA71950
 [color]
@@ -20,3 +20,5 @@
 [rebase]
 	autoStash = true
 	autoSquash = true
+[init]
+	defaultBranch = main
