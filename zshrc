@@ -44,9 +44,6 @@ alias egrep='egrep --color=auto'
 
 alias edit='emacsclient -nw'
 
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper_lazy
-
 for to_source in $HOME/.nvm/nvm.sh                \
                  $HOME/.rvm/scripts/rvm           \
                  $HOME/.cargo/env                 \
@@ -54,3 +51,10 @@ for to_source in $HOME/.nvm/nvm.sh                \
 do
   [[ -s $to_source ]] && source $to_source
 done
+
+eval "$(pyenv init -)"
+pyenv virtualenvwrapper_lazy
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
