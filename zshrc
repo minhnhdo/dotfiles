@@ -47,7 +47,8 @@ alias edit='emacsclient -nw'
 for to_source in $HOME/.nvm/nvm.sh                \
                  $HOME/.rvm/scripts/rvm           \
                  $HOME/.cargo/env                 \
-                 $HOME/.company-config
+                 $HOME/.company-config            \
+                 $NVM_DIR/bash_completion
 do
   [[ -s $to_source ]] && source $to_source
 done
