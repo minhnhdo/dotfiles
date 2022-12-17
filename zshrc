@@ -53,7 +53,7 @@ do
 done
 
 eval "$(pyenv init -)"
-pyenv virtualenvwrapper_lazy
+eval "$(pyenv virtualenv-init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
