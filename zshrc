@@ -56,6 +56,8 @@ done
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+[[ ! -r /Users/minh/.opam/opam-init/init.zsh ]] || source /Users/minh/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
