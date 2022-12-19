@@ -12,5 +12,14 @@
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
-    }
+    },
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "editor.formatOnSave": true,
+    "rust-analyzer.rustfmt.extraArgs": [
+        "+nightly"
+    ]
 }
