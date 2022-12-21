@@ -1,4 +1,5 @@
 {
+    "workbench.colorTheme": "Solarized Dark",
     "vscode-neovim.neovimPath": "/usr/bin/nvim",
     "explorer.confirmDelete": false,
     "[dart]": {
