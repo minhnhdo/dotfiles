@@ -44,9 +44,12 @@ alias egrep='egrep --color=auto'
 
 alias edit='emacsclient -nw'
 
+export SDKMAN_DIR="$HOME/.sdkman"
+
 for to_source in $HOME/.nvm/nvm.sh                \
                  $HOME/.rvm/scripts/rvm           \
                  $HOME/.cargo/env                 \
+                 $SDKMAN_DIR/bin/sdkman-init.sh   \
                  $HOME/.company-config            \
                  $NVM_DIR/bash_completion
 do
