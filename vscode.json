@@ -1,6 +1,4 @@
 {
-    "workbench.colorTheme": "Solarized Dark",
-    "vscode-neovim.neovimPath": "/usr/bin/nvim",
     "explorer.confirmDelete": false,
     "[dart]": {
         "editor.formatOnSave": true,
@@ -19,8 +17,5 @@
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "editor.formatOnSave": true,
-    "rust-analyzer.rustfmt.extraArgs": [
-        "+nightly"
-    ]
+    "editor.formatOnSave": true
 }
