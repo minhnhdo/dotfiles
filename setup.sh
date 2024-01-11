@@ -3,10 +3,10 @@
 # verbose and exit on error
 set -xe
 
-for f in gitconfig jshintrc spacemacs tmux.conf vimrc zshrc taskrc
+for f in gitconfig jshintrc spacemacs tmux.conf vimrc zshenv zshrc taskrc
 do
-  ln -s $PWD/$f $HOME/.$f
+  ln -sf $PWD/$f $HOME/.$f
 done
 
 mkdir -p $HOME/.config/nvim/
-ln -s $PWD/vimrc $HOME/.config/nvim/init.vim
+ln -sf $PWD/vimrc $HOME/.config/nvim/init.vim
