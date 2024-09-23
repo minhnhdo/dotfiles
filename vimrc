@@ -2,47 +2,41 @@ if !exists('g:vscode')
   scriptencoding utf-8
   set encoding=utf-8
 
-  " for vundle
-  set nocompatible
-  filetype off
+  call plug#begin()
 
-  set rtp+=$HOME/.vim/bundle/Vundle.vim/
-  call vundle#begin()
+  Plug 'NLKNguyen/papercolor-theme'
+  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+  Plug 'SirVer/ultisnips'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'eagletmt/ghcmod-vim'
+  Plug 'eagletmt/neco-ghc'
+  Plug 'elixir-tools/elixir-tools.nvim'
+  Plug 'fatih/vim-go'
+  Plug 'honza/vim-snippets'
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'idris-hackers/idris-vim'
+  Plug 'kien/rainbow_parentheses.vim'
+  Plug 'kien/tabman.vim'
+  Plug 'kovisoft/paredit'
+  Plug 'majutsushi/tagbar'
+  Plug 'marijnh/tern_for_vim'
+  Plug 'nvim-treesitter/nvim-treesitter', { 'do': 'TSUpdate' }
+  Plug 'powerman/vim-plugin-AnsiEsc'
+  Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+  Plug 'rust-lang/rust.vim'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'scrooloose/syntastic'
+  Plug 'tpope/vim-classpath'
+  Plug 'tpope/vim-eunuch'
+  Plug 'tpope/vim-fireplace'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-speeddating'
+  Plug 'tpope/vim-surround'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 
-  " let Vundle manage Vundle
-  " required!
-  Plugin 'VundleVim/Vundle.vim'
-  " original repos on github
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'ctrlpvim/ctrlp.vim'
-  Plugin 'eagletmt/ghcmod-vim'
-  Plugin 'eagletmt/neco-ghc'
-  Plugin 'fatih/vim-go'
-  Plugin 'honza/vim-snippets'
-  Plugin 'idris-hackers/idris-vim'
-  Plugin 'kien/tabman.vim'
-  Plugin 'kien/rainbow_parentheses.vim'
-  Plugin 'kovisoft/paredit'
-  Plugin 'majutsushi/tagbar'
-  Plugin 'marijnh/tern_for_vim'
-  Plugin 'NLKNguyen/papercolor-theme'
-  Plugin 'powerman/vim-plugin-AnsiEsc'
-  Plugin 'scrooloose/nerdcommenter'
-  Plugin 'scrooloose/syntastic'
-  Plugin 'SirVer/ultisnips'
-  Plugin 'Shougo/vimproc.vim'
-  Plugin 'tpope/vim-classpath'
-  Plugin 'tpope/vim-eunuch'
-  Plugin 'tpope/vim-fireplace'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-speeddating'
-  Plugin 'tpope/vim-surround'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'Valloric/YouCompleteMe'
-  Plugin 'rust-lang/rust.vim'
-
-  call vundle#end()
+  call plug#end()
 
   " for rainbow_parentheses
   au VimEnter * RainbowParenthesesToggle
